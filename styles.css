@@ -1,0 +1,279 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+#wrapper{
+    overflow-x: hidden;
+    overflow-y: auto;
+    box-sizing: border-box;
+    width: 1200px;
+    margin: 0 auto;
+
+    box-shadow: 2px 2px 10px black;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+.main-sec{
+    background-image: url(./images/home-bg.jpg);
+    background-repeat: no-repeat;
+    height: 75%;  
+}
+
+.header{
+    display: flex;
+}
+.header img{
+    padding-left: 2rem;
+    padding-top: 1.5rem;
+}
+.buttons{
+    display: flex;
+    flex-direction: row;
+
+    justify-content: center;
+    align-items: center;
+    padding-left: 5rem;
+    padding-top: 1rem;
+    margin-right: 1rem;
+    gap: 2rem;
+    font-size: 14px;
+}
+
+.btn{
+    border: 1px solid white;
+    height: 20x;
+    width: fit-content;
+    color: white;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+
+    transition: all;
+    
+}
+
+.bottom-head{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 3rem;
+
+    
+    padding-top: 5rem;
+}
+
+.heading-bottom-head{
+    color: white;
+    font-size: 45px;
+}
+
+.bottom-btn{
+    border: 1px solid white;
+    height: 25x;
+    width: fit-content;
+    color: white;
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+
+    transition: all;   
+}
+
+.btn:hover{
+    cursor: pointer;
+    background-color: #77B141;
+    border: none;
+}
+.bottom-btn:hover{
+    cursor: pointer;
+    background-color: #77B141;
+    border: none;
+}
+
+.mid-sec{
+    background-image:url(./images/content-bg.jpg) ;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.food{
+    display: flex;
+    flex-direction: row;
+    background-color: white;
+}
+
+.left-food{
+    padding-top: 7rem;
+    padding-left: 20px;
+    width: 456px;
+}
+.left-food h2{
+    color: #77B141;
+    font-size: 28px;
+    font-weight: 200;
+    text-align: center;
+}
+.left-food p{
+    line-height: 26px;
+    font-size: 14px;
+    padding-top: 1rem;
+    text-align: justify;
+}
+.left-food button{
+    margin-top: 15px;
+    padding-left: 30px;
+    padding-bottom: 10px;
+    padding-right: 30px;
+    padding-top: 10px;
+
+    font-size: 16px;
+    color: white;
+    background-color: #77B141;
+    border: none;
+
+    transition: all;
+    transition-timing-function: ease;
+}
+
+.left-food button:hover{
+    background-color: #689242;
+    cursor: pointer;
+}
+.bg{
+    background-attachment: fixed;
+}
+
+.interior{
+    width: 800px;
+    height: 500px;
+    margin: 0 auto;
+
+    background-color: #ffffff;
+    opacity: 60%;
+
+    margin-top: 5rem;
+}
+.interior h2{
+    text-align: center;
+    padding-top: 3rem;
+    font-size: 36px;
+}
+.content{
+    display: flex;
+    flex-direction: row;
+    padding-top: 2rem;
+    padding-bottom: 3rem;
+    gap:50px;
+}
+
+.content-heading{
+    text-align: center;
+    padding-top: 1rem;
+    font-size: 16px;
+
+    text-shadow: 1px 1px 10px black;
+}
+
+.content-paragraph{
+    font-size: 14px;
+    line-height: 26px;
+    padding-top: 5px;
+    padding-bottom: 20px;
+    text-align: justify;
+
+}
+.res-interior-left{
+    width: 350px;
+    padding-left: 2rem;
+}
+.res-interior-right{
+    width: 350px;
+}
+
+.menu{
+    display: grid;
+    grid-template-rows: repeat(7,1fr);
+    grid-template-columns: repeat(2,1fr);
+
+    padding-top: 2rem;
+    padding-left: 1rem;
+}
+
+.card{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+    gap: 1rem;
+    line-height: 4rem;
+}
+
+.content-menu{
+    line-height: 2rem;
+}
+.price{
+    font-weight: bold;
+}
+.green{
+    color: #77B141;
+    font-weight:bold;
+}
+
+.menu-btn{
+    height: 1.8rem;
+    width: 6.5rem;
+    font-size: 16px;
+    background-color: #77B141;
+    color: white;
+    border: none;
+
+    transition: all 2ms;
+}
+
+.menu-btn:hover{
+    background-color: #689242;
+    cursor: pointer;
+}
+
+.last-sec{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    padding: 2rem;
+    gap: 6rem;
+    text-align: justify;
+
+    background-color: #333333;
+    color: white;
+}
+.last-sec p{
+    line-height: 1.5rem;
+    font-size: 16px;
+}
+
+.last-sec h4{
+    line-height: 3rem;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.footer{
+    background-color: black;
+    color: white;
+    height: 2rem;
+    font-size: 13px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* @media screen and (max-width:150px) {
+    .menu{
+        display: grid;
+        grid-template-rows: repeat(14,1fr);
+        grid-template-columns: repeat(1,1fr);
+    }
+} */
